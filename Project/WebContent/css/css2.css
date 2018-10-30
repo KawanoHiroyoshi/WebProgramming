@@ -1,0 +1,48 @@
+@charset "utf-8";
+
+.center {
+   text-align: center;
+}
+
+.right{
+	text-align: right;
+}
+.left{
+	text-align: left;
+}
+
+p {text-align: center}
+
+a.button1{
+font-size:0.75em;
+display:inline-block;
+width:50px;
+padding-top:10px;
+padding-bottom:10px;
+text-align:center;
+text-color: #ffffff;
+background:blue;
+}
+
+a.button2{
+font-size:0.75em;
+display:inline-block;
+width:50px;
+padding-top:10px;
+padding-bottom:10px;
+text-align:center;
+text-color: #ffffff;
+background:#00ff7f;
+}
+
+a.button3{
+font-size:0.75em;
+display:inline-block;
+width:50px;
+padding-top:10px;
+padding-bottom:10px;
+text-align:center;
+text-color: #ffffff;
+background:#e60033;
+}
+

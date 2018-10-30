@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>ユーザ</title>
+<link rel="stylesheet" href="/css/css2.css">
+ </head>
+<body>
+<head>
+ </head>
+ <div style="text-align:right;">ユーザ名さん <a class="nav-link"  style="color:red;" href="index.html">ログアウト</a></div>
+      <div style="text-align:right;"><a class="btn btn-outline-primary btn-lg" href="UserCreate.html">新規登録</a></div>
+ <div style="text-align:center;"><font size="10">ユーザ一覧</font></div>
+
+
+
+    <!-- 検索ボックス -->
+        <form method="post" action="UserList.html" class="form-horizontal">
+
+             <label for="loginId" class="col-sm-2 col-form-label">ログインID</label>
+              <div style="text-align:center;"><input type="text" class="form-control" id="loginId"></div>
+
+
+
+          <label for="userName" class="col-sm-2 col-form-label">ユーザ名</label>
+              <div style="text-align:center;">  <input type="text" class="form-control" id="userName">
+            </div>
+
+
+            <label for="birthDate" class="col-sm-2 col-form-label">生年月日</label>
+                <div style="text-align:center;"><input type="date" name="date-start" id="date-start" class="form-control"/>
+
+        ~
+                <input type="date" name="date-end" id="date-end" class="form-control"/>
+                </div>
+ <div style="text-align:right;"><button type="submit" value="検索" class="btn btn-primary form-submit">検索</button></div>
+
+        </form>
+
+    <!-- 検索結果一覧 -->
+    <div class="table-responsive">
+     <table border="1" bgcolor= "#d3d3d3" width="75%" style="table-layout: fixed;">
+
+          <tr>
+            <th>ログインID</th>
+            <th>ユーザ名</th>
+            <th>生年月日</th>
+            <th></th>
+          </tr>
+        </table>
+        <table border="1" width="75%" style="table-layout: fixed;">
+          <tr>
+            <td>id0001</td>
+            <td>田中太郎</td>
+            <td>1989年04月20日</td>
+            <td>
+              <button style= "background-color:red; color:white"onclick="location.href='UserDetail.html'">詳細</button>
+              <button style= "background-color:#00ff7f; color:white" onclick="location.href='UserUpdate.html'">更新</button>
+              <button style="background-color:#0000ff;"style= "background-color:#0000ff; color:white" onclick="location.href ='UserDelete.html'">削除</button>
+            </td>
+          </tr>
+          <tr>
+            <td>id0001</td>
+            <td>田中太郎</td>
+            <td>1989年04月20日</td>
+            <td>
+              <button style= "background-color:red; color:white"onclick="location.href='UserDetail.html'">詳細</button>
+              <button style= "background-color:#00ff7f; color:white" onclick="location.href='UserUpdate.html'">更新</button>
+              <button style= "background-color:#0000ff; color:white" onclick="location.href ='UserDelete.html'">削除</button>
+            </td>
+          </tr>
+          <tr>
+            <td>id0001</td>
+            <td>田中太郎</td>
+            <td>1989年04月20日</td>
+            <td>
+           <button style= "background-color:red; color:white"onclick="location.href='UserDetail.html'">詳細</button>
+              <button style= "background-color:#00ff7f; color:white" onclick="location.href='UserUpdate.html">更新</button>
+               <button style= "background-color:#0000ff; color:white" onclick="location.href ='UserDelete.html'">削除</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+
+
+</body>
+</html>

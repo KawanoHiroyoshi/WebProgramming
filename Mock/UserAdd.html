@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ユーザ登録画面</title>
+    <!-- BootstrapのCSS読み込み -->
+    <!-- オリジナルCSS読み込み -->
+    <!-- Jqeryの読み込み -->
+    <!-- BootstrapのJS読み込み -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- レイアウトカスタマイズ用個別CSS -->
+
+  </head>
+  <body>
+
+    <header>
+    <div style="text-align:center;"><font size="10">ユーザ詳細</font></div>
+         <div style="text-align:right;">ユーザ名さん <a class="nav-link"  style="color:red;" href="index.html">ログアウト</a></div>
+    </header>
+
+
+    <!-- body -->
+
+            <form method="post" action="UserList.html" class="form-horizontal">
+
+            <label for="user-id" class="control-label col-sm-2">ログインID</label>
+              <div style="text-align:center;"><input type="text" name="user-id" id="user-id" class="form-control"/></div>
+
+                <label for="password" class="control-label col-sm-2">パスワード</label>
+                    <div style="text-align:center;"><input type="password" name="password" id="password" class="form-control"/>
+                </div>
+                <label for="password-confirm" class="control-label col-sm-2">パスワード(確認)</label>
+                    <div style="text-align:center;"><input type="password" name="password-confirm" id="password-confirm" class="form-control"/>
+                </div>
+
+                <label for="user-name" class="control-label col-sm-2">ユーザ名</label>
+                    <div style="text-align:center;"><input type="text" name="user-name" id="user-name" class="form-control"/>
+                </div>
+
+                <label for="continent" class="control-label col-sm-2">生年月日</label>
+                      <div style ="text-align:center;"><input type="date" name="birth-day" id="birth-day" class="form-control" size="30"/>
+                  </div>
+
+                <div style ="text-align:center;"><button type="submit" value="検索" class="btn btn-primary center-block form-submit">登録</button>
+              </div>
+            </form>
+
+
+      <div class="col-xs-4">
+        <a href="UserList.html">戻る</a>
+      </div>
+
+
+  </body>
+</html>

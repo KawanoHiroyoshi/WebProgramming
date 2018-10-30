@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ユーザ新規登録画面</title>
+
+</head>
+<body>
+
+  <div style="text-align:right;">ユーザ名さん <a class="nav-link"  style="color:red;" href="index.html">ログアウト</a></div>
+    <div style="text-align:center;"><font size="10">ユーザ一覧</font></div>
+
+
+    <form method="post" action="UserList.html" class="form-horizontal">
+        <label for="loginId" class="col-sm-2 col-form-label">ログインID</label>
+          <div style="text-align:center;"><input type="text" class="form-control" id="loginId">
+        </div>
+
+        <label for="password" class="col-sm-2 col-form-label">パスワード</label>
+          <div style="text-align:center;"><input type="password" class="form-control" id="password">
+        </div>
+
+        <label for="passwordConf" class="col-sm-2 col-form-label">パスワード(確認)</label>
+          <div style="text-align:center;"><input type="password" class="form-control" id="passwordConf">
+        </div>
+
+
+        <label for="userName" class="col-sm-2 col-form-label">ユーザ名</label>
+          <div style="text-align:center;"><input type="text" class="form-control" id="userName">
+        </div>
+
+        <label for="birthDate" class="col-sm-2 col-form-label">生年月日</label>
+          <div style="text-align:center;"><input type="date" class="form-control" id="birthDate">
+        </div>
+
+      <div class="submit-button-area">
+        <button type="submit" value="検索" class="btn btn-primary btn-lg btn-block">登録</button>
+      </div>
+
+      <div class="col-xs-4">
+        <a href="UserList.html">戻る</a>
+      </div>
+
+    </form>
+
+
+
+
+
+
+
+
+</body>
+</html>

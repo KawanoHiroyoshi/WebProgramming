@@ -1,0 +1,11 @@
+CREATE TABLE user(id SERIAL PRIMARY KEY UNIQUE,
+user_id varchar(255) NOT NULL UNIQUE,
+name varchar(255) NOT NULL,
+birth_date DATE NOT NULL,
+password varchar(255) NOT NULL,
+create_date DATETIME NOT NULL,
+update_date DATETIME NOT NULL);
+
+INSERT INTO user(id,user_id,name,birth_date,password,create_date,update_date)
+ VALUES(1,'admin','ä«óùé“',1994-11-21,'pass',now(),now());
+
